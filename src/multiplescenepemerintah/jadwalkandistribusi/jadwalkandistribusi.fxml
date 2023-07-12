@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1044.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiplescenepemerintah.jadwalkandistribusi.JadwalkanDistribusiController">
+   <children>
+      <ScrollPane prefHeight="552.0" prefWidth="1044.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1198.0" prefWidth="1025.0">
+               <children>
+                  <Label layoutX="256.0" text="Jadwalkan Distribusi">
+                     <font>
+                        <Font name="Century Gothic Bold" size="58.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="TVDistribusi" layoutX="148.0" layoutY="83.0" prefHeight="400.0" prefWidth="783.0">
+                    <columns>
+                      <TableColumn fx:id="Wilayah" prefWidth="292.0000457763672" text="Wilayah" />
+                      <TableColumn fx:id="Tanggal" prefWidth="272.0000305175781" text="Tanggal" />
+                        <TableColumn fx:id="StatusDistribusi" prefWidth="235.33331298828125" text="Status Distribusi" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="InputWilayah" layoutX="156.0" layoutY="502.0" promptText="Input Wilayah" />
+                  <TextField fx:id="TanggalDistribusi" layoutX="339.0" layoutY="503.0" promptText="Tanggal Distribusi" />
+                  <Button fx:id="input" layoutX="518.0" layoutY="502.0" mnemonicParsing="false" onAction="#ButtonInput" style="-fx-background-color: #315e26;" text="Input" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="distribusi" layoutX="799.0" layoutY="501.0" mnemonicParsing="false" onAction="#ButtonDistribusi" style="-fx-background-color: #315e26;" text="Distribusikan" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font></Button>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

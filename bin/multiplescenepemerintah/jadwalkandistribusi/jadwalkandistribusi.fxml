@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1044.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane prefHeight="552.0" prefWidth="1044.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1198.0" prefWidth="1025.0">
+               <children>
+                  <Label layoutX="81.0" layoutY="-11.0" text="Jadwalkan Distribusi" textFill="GOLD">
+                     <font>
+                        <Font name="Bell MT Bold" size="96.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="452.0" fitWidth="942.0" layoutX="57.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../logo/BriCoin.png" />
+                     </image>
+                  </ImageView>
+                  <TableView layoutX="148.0" layoutY="83.0" prefHeight="400.0" prefWidth="783.0">
+                    <columns>
+                      <TableColumn prefWidth="346.9333801269531" text="Wilayah" />
+                      <TableColumn prefWidth="260.2666320800781" text="Tanggal" />
+                        <TableColumn prefWidth="190.66668701171875" text="Status Distribusi" />
+                    </columns>
+                  </TableView>
+                  <TextField layoutX="156.0" layoutY="502.0" promptText="Input Wilayah" />
+                  <TextField layoutX="339.0" layoutY="503.0" promptText="Tanggal Distribusi" />
+                  <Button layoutX="518.0" layoutY="502.0" mnemonicParsing="false" text="Input" />
+                  <Button layoutX="791.0" layoutY="500.0" mnemonicParsing="false" text="Distribusikan" />
+                  <TextField layoutX="693.0" layoutY="499.0" prefHeight="26.0" prefWidth="71.0" promptText="Wilayah" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

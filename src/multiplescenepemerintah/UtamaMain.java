@@ -1,0 +1,27 @@
+package multiplescenepemerintah;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class UtamaMain extends Application {
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("HalamanUtama.fxml"));
+
+        Scene scene = new Scene(root, 1200, 650);
+
+        stage.setScene(scene);
+        stage.setResizable(true);
+        stage.show();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+}

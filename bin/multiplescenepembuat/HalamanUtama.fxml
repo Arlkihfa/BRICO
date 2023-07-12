@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" styleClass="headanchorpane-lapor" stylesheets="@../css/homepage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiplescenepembuat.UtamaController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="650.0" prefWidth="1200.0">
+         <top>
+            <AnchorPane prefHeight="91.0" prefWidth="1200.0" style="-fx-background-color: #97cf8a;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="182.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logo/BRICO.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="492.0" layoutY="-2.0" prefHeight="100.0" prefWidth="217.0" text="Menu Pembuat" textAlignment="CENTER" textFill="#315e26">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="1116.0" layoutY="27.0" mnemonicParsing="false" onAction="#keLogin" prefHeight="42.0" prefWidth="70.0" style="-fx-background-color: #315e26;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="552.0" prefWidth="1034.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="575.0" fitWidth="623.0" layoutX="249.0" layoutY="-21.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logo/GetPoint.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </center>
+         <left>
+            <VBox prefHeight="552.0" prefWidth="148.0" style="-fx-background-color: #b1dd9e;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#keJumlahEcobrick" prefHeight="42.0" prefWidth="222.0" style="-fx-background-color: #315e26;" text="Jumlah Ecobrick" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="160.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></Button>
+                  <Button mnemonicParsing="false" onAction="#keLokasiPengepulan" prefHeight="42.0" prefWidth="260.0" style="-fx-background-color: #315e26;" text="Lokasi Pengepulan" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></Button>
+                  <Button mnemonicParsing="false" onAction="#keTukarEcobrick" prefHeight="42.0" prefWidth="228.0" style="-fx-background-color: #315e26;" text="Tukar Ecobrick" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></Button>
+                  <Button layoutX="10.0" layoutY="274.0" mnemonicParsing="false" onAction="#keTukarPoin" prefHeight="42.0" prefWidth="228.0" style="-fx-background-color: #315e26;" text="Tukar Poin" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

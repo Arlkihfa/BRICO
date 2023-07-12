@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #b1dd9e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.JenisPendaftarController">
+   <children>
+      <ImageView fitHeight="1408.0" fitWidth="1237.0" layoutX="-37.0" layoutY="-218.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo/daftarEco.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pemerintah" layoutX="501.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonPemerintah" prefHeight="46.0" prefWidth="175.0" style="-fx-background-color: #315e26;" text="Pemerintah" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="pembuat" layoutX="501.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleButtonPembuat" prefHeight="46.0" prefWidth="175.0" style="-fx-background-color: #315e26;" text="Pembuat" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="pembeli" layoutX="501.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleButtonPembeli" prefHeight="46.0" prefWidth="175.0" style="-fx-background-color: #315e26;" text="Pembeli" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text fill="#315e26" layoutX="457.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daftar Sebagai:">
+         <font>
+            <Font name="Bodoni MT Bold" size="45.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

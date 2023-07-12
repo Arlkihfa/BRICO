@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: b1dd9e;" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo/loginbackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="299.0" layoutX="734.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo/logobricobaru.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameField" layoutX="734.0" layoutY="332.0" prefHeight="43.0" prefWidth="300.0" promptText="Username" style="-fx-background-radius: 8; -fx-background-color: #acd1af;">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordField" layoutX="734.0" layoutY="382.0" prefHeight="43.0" prefWidth="300.0" promptText="Password" style="-fx-background-radius: 8; -fx-background-color: #acd1af;">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="signUp" layoutX="1058.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleButtonSignUp" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #315e26; -fx-background-radius: 8;" text="Daftar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="login" layoutX="735.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleButtonLogin" prefHeight="43.0" prefWidth="300.0" style="-fx-background-color: #315e26; -fx-background-radius: 8;" stylesheets="@../css/login.css" text="Masuk" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="24.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rButtonPembeli" layoutX="734.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleButtonRadio" prefHeight="30.0" prefWidth="103.0" style="-fx-text-fill: #315e26;" text="Pembeli">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="jenisUser" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rButtonPembuat" layoutX="831.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleButtonRadio" prefHeight="30.0" prefWidth="113.0" style="-fx-text-fill: #315e26;" text="Pembuat" toggleGroup="$jenisUser">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rButtonPemerintah" layoutX="942.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleButtonRadio" prefHeight="30.0" prefWidth="113.0" style="-fx-text-fill: #315e26;" text="Pengelola" toggleGroup="$jenisUser">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

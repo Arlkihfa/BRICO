@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiplescenepembeli.jumlahecobrick.JumlahEcobrickController">
+   <children>
+      <ScrollPane prefHeight="552.0" prefWidth="1052.0">
+        <content>
+          <AnchorPane layoutX="323.0" layoutY="79.0" minHeight="0.0" minWidth="0.0" prefHeight="1265.0" prefWidth="1061.0">
+               <children>
+                  <Label layoutX="331.0" layoutY="40.0" text="Jumlah Ecobrick">
+                     <font>
+                        <Font name="Century Gothic Bold" size="50.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="Tabel" layoutX="91.0" layoutY="216.0" prefHeight="276.0" prefWidth="869.0">
+                    <columns>
+                      <TableColumn fx:id="kolLokasi" prefWidth="423.0" text="Lokasi Pengepulan" />
+                        <TableColumn fx:id="kolBerat" prefWidth="445.0" text="Berat (Kg)" />
+                    </columns>
+                  </TableView>
+                  <ChoiceBox fx:id="choiceBoxKota" layoutX="441.0" layoutY="166.0" prefHeight="25.0" prefWidth="203.0" />
+                  <Label layoutX="278.0" layoutY="166.0" text="Kabupaten/Kota">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="lihat" layoutX="675.0" layoutY="164.0" mnemonicParsing="false" onAction="#buttonLihat" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #315e26;" text="Lihat" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font></Button>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
